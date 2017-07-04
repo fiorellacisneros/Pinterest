@@ -3,6 +3,8 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserify = require('gulp-browserify');
 const rename = require('gulp-rename');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
 const browserSync = require('browser-sync').create();
 
 const config = {
@@ -25,7 +27,7 @@ const sources = {
 	sass: paths.assets + paths.sass,
 	js: paths.assets + paths.js,
 	rootSass: config.source + paths.assets + paths.mainSass,
-	rootJs: config.source + paths.assets + paths.mainJs 
+	rootJs: config.source + paths.assets + paths.js 
 };
 
 //configurando las tareas en gulp
@@ -43,9 +45,8 @@ gulp.task('sass', ()=>{
 });
 
 gulp.task('js', ()=>{
-	gulp.src(sources.rootJs)
-	.pipe(browserify())
-	.pipe(rename('bundle.js'))
+	gulp.src(config.source+sources.js)	
+	.pipe(concat('main.js'))
 	.pipe(gulp.dest(config.dist+paths.assets+"js"))
 });
 

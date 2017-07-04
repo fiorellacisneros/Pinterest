@@ -2,26 +2,35 @@
     font-family: "Helvetica Neue", "Helvetica", sans-serif;
 }
 .board{
-    width: 250px;
+    border-radius: 8px;
     height: 100%;
     padding: 5px;
-    border-radius: 8px;
+    width: 248px;
 }
 .board:hover{
     background-color: #EFEFEF;
 }
 .board-image{
-    width: 236px;
     border-radius: 8px;
     cursor: zoom-in;
     overflow: hidden;
+    width: 236px;
 }
 .board-user{
     border-radius: 50%;
     height: 24px;
+    margin-right: 9px;
     width: 24px;
 }
-.board-cont-user:hover{
+.board-contuser{
+    align-items: center;
+    display: flex;
+    font-size: 12px;
+}
+.board-contuser:hover{
     background-color: #ddd;
     cursor: pointer;
+}
+.board-font-bold{
+    font-weight: 700;
 }

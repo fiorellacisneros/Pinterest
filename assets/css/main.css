@@ -1,0 +1,27 @@
+*{
+    font-family: "Helvetica Neue", "Helvetica", sans-serif;
+}
+.board{
+    width: 250px;
+    height: 100%;
+    padding: 5px;
+    border-radius: 8px;
+}
+.board:hover{
+    background-color: #EFEFEF;
+}
+.board-image{
+    width: 236px;
+    border-radius: 8px;
+    cursor: zoom-in;
+    overflow: hidden;
+}
+.board-user{
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+}
+.board-cont-user:hover{
+    background-color: #ddd;
+    cursor: pointer;
+}

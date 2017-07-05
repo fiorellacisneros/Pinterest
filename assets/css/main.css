@@ -10,7 +10,7 @@
 .board:hover{
     background-color: #EFEFEF;
 }
-.board-image{
+.board-img{
     border-radius: 8px;
     cursor: zoom-in;
     overflow: hidden;

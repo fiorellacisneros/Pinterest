@@ -1,7 +1,5 @@
 'use strict';
-console.log("Ahora si");
+console.log("app");
 
-
-
-
-
+search();
+mostrar();

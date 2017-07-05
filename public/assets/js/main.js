@@ -1,13 +1,14 @@
-'use strict';
+'use strict'
 const search = ()=>{
-	console.log("componente");
-}
-
-
-
-
-'use strict';
-console.log("modal");
-const sumar = (a, b)=>{
-	return a-b;
+	console.log("componente uno");
 };
+'use strict';
+const mostrar = ()=>{
+	console.log("hola componente dos");
+
+}
+'use strict';
+console.log("app");
+
+search();
+mostrar();

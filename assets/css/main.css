@@ -1,36 +1,107 @@
 *{
     font-family: "Helvetica Neue", "Helvetica", sans-serif;
 }
-.board{
-    border-radius: 8px;
-    height: 100%;
-    padding: 5px;
-    width: 248px;
+/*SCROLL*/
+.weight-800{
+    font-weight: 800;
 }
-.board:hover{
-    background-color: #EFEFEF;
+.scroll{
+    margin: auto;
+    margin-top: 30px;
+    max-width: 744px;
+    position: relative;
+    z-index: 5;
 }
-.board-img{
-    border-radius: 8px;
-    cursor: zoom-in;
-    overflow: hidden;
-    width: 236px;
+@media (max-width: 600px){
+    .scroll{
+        max-width: 300px;
+    }
 }
-.board-user{
-    border-radius: 50%;
-    height: 24px;
-    margin-right: 9px;
-    width: 24px;
-}
-.board-contuser{
-    align-items: center;
-    display: flex;
-    font-size: 12px;
-}
-.board-contuser:hover{
-    background-color: #ddd;
+.scroll__ico{
+    height: 48px;
+    width: 48px;
+    padding-top: 10px;
+    display: inline-block;
     cursor: pointer;
 }
-.board-font-bold{
-    font-weight: 700;
+.scroll__ico:hover{
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.06);
 }
+.icon-share-alternitive:before{
+    color: #b5b5b5;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+/*FRONT*/
+.right{
+    float: right;
+}
+.front{
+    margin: auto;
+    margin-top: 50px;
+    max-width: 744px;
+    position: relative;
+    color: #555;
+}
+.front__title{
+    letter-spacing: -1.25px;
+}
+.front .front__pines{
+    margin-bottom: 0;
+}
+@media (max-width: 600px){
+    .front{
+        max-width: 300px;
+    }
+}
+.front__userprinc{
+    border-radius: 50%;
+    height: 60px;
+    margin-right: 9px;
+    width: 60px;
+    float: right;
+}
+/*
+.board{
+border-radius: 8px;
+height: 100%;
+padding: 5px;
+width: 248px;
+}
+.board:hover{
+background-color: #EFEFEF;
+}
+.board-image{
+border-radius: 8px;
+cursor: zoom-in;
+overflow: hidden;
+width: 236px;
+}
+.board-user{
+border-radius: 50%;
+height: 24px;
+margin-right: 9px;
+width: 24px;
+}
+.board-user-princ{
+border-radius: 50%;
+height: 60px;
+margin-right: 9px;
+width: 60px;
+float: right;
+}
+.board-contuser{
+align-items: center;
+display: flex;
+font-size: 12px;
+}
+.board-contuser:hover{
+background-color: #ddd;
+border-radius: 5px;
+cursor: pointer;
+}
+.board-font-bold{
+font-weight: 700;
+}*/

@@ -22,6 +22,7 @@ const Scroll = () => {
                 $('.nameboard').hide();
                 $('.nameboard').css({"opacity":1});
                 $('.nameboard').css({"font-size": "27px"});
+                $('.nameboard').css({"color": "#555"});
                 $('.nameboard').css({"transform": "translate(0, 0)"});
                 $('.nameboard').css({"transition": "300ms ease-out"});
             } 

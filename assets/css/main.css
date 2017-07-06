@@ -25,12 +25,6 @@
 .contscroll__fixed__btn{
     margin-top: 9px;
 }
-/*
-@media (max-width: 600px){
-    .scroll{
-        max-width: 300px;
-    }
-}*/
 .contscroll__fixed--ico{
     margin-top: 8px;
     height: 48px;

@@ -1,31 +1,26 @@
-
+@mixin icon($url,$opacity, $width){
+	background-image: url("../img/#{$url}.png");
+	opacity: #{$opacity};
+	width: #{$width};
+}
 .icon{
 	display: inline-block;
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
-	opacity: 0.4;
-	width: 30px;
 	height: 40px;
 }
-
-.logo{
-	background-image: url("../img/pinterest-logo.png");
-	opacity: 1;
-	width: 35px;
-	height: 40px;
-}
-.categoria{
-	background-image: url("../img/hamburger-icon.png");
+.pinterest-logo{
+	@include icon("pinterest-logo","1","35px");
 }
 .user{
-	background-image: url("../img/user.png");
-	opacity: 0.3;
-	width: 35px;
-	height: 40px;
+	@include icon("user","0.3","35px");
+}
+.categoria{
+	@include icon("categoria","0.4","30px");
 }
 .message{
-	background-image: url("../img/message.png");
+	@include icon("message","0.4","30px");
 }
 .navbar-brand p{
 	font-size: 12px;
@@ -35,14 +30,21 @@
 	background: transparent;
 	height: 70px;
 }
-
-input.form-control{
+.navbar-form .form-control{
 	outline: 0;
 	border: none;
 	box-shadow:none;
+	background: transparent;
+	font-weight: 700;
+    font-size: 1.7rem;
+	width: 90%;
 }
 .navbar-form{
-	width: 70%;
+	width: 55%;
+	background-color: #efefef;
+	border-radius: 3px;
+	margin-top: 40px;
+	margin-right: 30px;
 }
 .form-group{
 	width: 100%;

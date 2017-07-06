@@ -2,10 +2,10 @@
 const Header = ()=>{
 	const header = $("<header></header>");
 	const navFixed = $("<nav class='navbar navbar-default navbar-fixed-top'></nav>");
-	const container = $("<div class='container'></div>");
+	const container = $("<div class='container-fluid'></div>");
 	const navBarHeader = $("<div class='navbar-header'></div>");
 	const brandLogo = $("<a class='navbar-brand text-center' href='#'></a>");
-	const iconLogo = $("<i class='icon logo'></i>");
+	const iconLogo = $("<i class='icon pinterest-logo'></i>");
 	const titleLogo = $("<p>Inicio</p>");
 	const form = $("<form class='navbar-form navbar-left' role='search'></form>");
 	const formGroup = $("<div class='form-group'></div>");
@@ -42,6 +42,6 @@ const Header = ()=>{
 	container.append(navBarHeader);
 	navFixed.append(container);
 	header.append(navFixed);
-	
+
 	return header;
 }

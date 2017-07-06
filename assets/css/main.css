@@ -22,7 +22,16 @@
     max-width: 755px;
     justify-content: space-between;
 }
-.contscroll__fixed__btn{
+.contleft__btn{
+    margin: 0;
+}
+.contleft{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.contscroll__fixed--btn{
     margin-top: 9px;
 }
 .contscroll__fixed--ico{
@@ -42,6 +51,11 @@
     font-size: 25px;
     font-weight: 600;
     margin-left: 10px;
+}
+.btn-default{
+    background-color: #efefef;
+    border: none;
+    font-size: 17px;
 }
 /*FRONT*/
 .right{
@@ -72,45 +86,3 @@
     width: 60px;
     float: right;
 }
-/*
-.board{
-border-radius: 8px;
-height: 100%;
-padding: 5px;
-width: 248px;
-}
-.board:hover{
-background-color: #EFEFEF;
-}
-.board-image{
-border-radius: 8px;
-cursor: zoom-in;
-overflow: hidden;
-width: 236px;
-}
-.board-user{
-border-radius: 50%;
-height: 24px;
-margin-right: 9px;
-width: 24px;
-}
-.board-user-princ{
-border-radius: 50%;
-height: 60px;
-margin-right: 9px;
-width: 60px;
-float: right;
-}
-.board-contuser{
-align-items: center;
-display: flex;
-font-size: 12px;
-}
-.board-contuser:hover{
-background-color: #ddd;
-border-radius: 5px;
-cursor: pointer;
-}
-.board-font-bold{
-font-weight: 700;
-}*/

@@ -4,7 +4,7 @@ const app =  express();
 
 app.use('/', express.static('public'));
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 5000;
 const hostname = '127.0.0.1';
 
 app.listen(port, hostname, () => {

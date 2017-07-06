@@ -10,6 +10,36 @@ h2{
 }
 p{
 	color: green;
-	font-size: 2rem;
+	font-size: 2rem
 }
 
+
+
+//Estilos para el board
+
+.container {
+	margin: auto;
+
+}
+
+
+.pin {
+
+	margin-left: 3%;
+	border:1px solid red;
+	padding-left: 0;
+	padding-right: 0;
+	overflow: auto;
+
+	
+
+	
+	&__itemImg {
+		width:100%;
+    	max-width:200px;
+	
+	}
+
+
+	
+	}

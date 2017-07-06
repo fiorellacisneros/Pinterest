@@ -17,7 +17,7 @@ const Board = () => {
 			state.board = $.merge(state.board1.data,state.board2.data);
 
 			jQuery.each(state.board,(i,val)=>{
-				container.append(`<div class="pin col-lg-2" data-toggle="modal" data-target="#myModal" data-id=${val.id}></div>`);
+				container.append(`<div class="pin col-lg-2 col-xs-4" data-toggle="modal" data-target="#myModal" data-id=${val.id}></div>`);
 				container.children().eq(i).append(`<img class="pin__itemImg" src="${val.image.original.url}"/>`);
 				container.children().eq(5).css('clear','both');
 				if(val.metadata.hasOwnProperty('article')){

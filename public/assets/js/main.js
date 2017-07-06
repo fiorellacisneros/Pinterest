@@ -1,27 +1,4 @@
-//Definimos la función de Get Json para consumir las apis
 'use strict';
-
-const getJSON = (url, cb) => {
-
-    const xhr = new XMLHttpRequest();
-
-    xhr.addEventListener('load', () => {
-
-        if (xhr.status !== 200) {
-            return cb(new Error('Error loading JSON from ' + url + '(' + xhr.status + ')'));
-        }
-
-
-        cb(null, xhr.response);
-    });
-
-    xhr.open('GET', url);
-    xhr.responseType = 'json';
-    xhr.send();
-};
-
-
-
 const User = () => {
 
 	const userData = $('<div class="user"></div>')
@@ -95,16 +72,6 @@ return modal;
 
 }
 
-
-
-
-
-
-
-
-
-'use strict';
-const root = $(".root");
 const render = (root) => {
   root.empty();
   const wrapper = $('<div class="wrapper"></div>');
@@ -160,7 +127,7 @@ const Board = () => {
 			state.board = $.merge(state.board1.data,state.board2.data);
 
 			jQuery.each(state.board,(i,val)=>{
-				container.append(`<div class="pin col-lg-2" data-toggle="modal" data-target="#myModal" data-id=${val.id}></div>`);
+				container.append(`<div class="pin col-lg-2 col-xs-4" data-toggle="modal" data-target="#myModal" data-id=${val.id}></div>`);
 				container.children().eq(i).append(`<img class="pin__itemImg" src="${val.image.original.url}"/>`);
 				container.children().eq(5).css('clear','both');
 				if(val.metadata.hasOwnProperty('article')){
@@ -273,4 +240,24 @@ const Header = ()=>{
 	return header;
 }
 
+//Definimos la función de Get Json para consumir las apis
+'use strict';
 
+const getJSON = (url, cb) => {
+
+    const xhr = new XMLHttpRequest();
+
+    xhr.addEventListener('load', () => {
+
+        if (xhr.status !== 200) {
+            return cb(new Error('Error loading JSON from ' + url + '(' + xhr.status + ')'));
+        }
+
+
+        cb(null, xhr.response);
+    });
+
+    xhr.open('GET', url);
+    xhr.responseType = 'json';
+    xhr.send();
+};

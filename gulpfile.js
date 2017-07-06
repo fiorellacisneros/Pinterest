@@ -47,7 +47,8 @@ gulp.task('sass', ()=>{
 });
 
 gulp.task('js', ()=>{
-	gulp.src(["./src/assets/js/components/componente1.js","./src/assets/js/components/componente2.js","./src/assets/js/app.js"])	
+	//gulp.src(["./src/assets/js/components/componente1.js","./src/assets/js/components/componente2.js","./src/assets/js/app.js"])	
+	gulp.src([config.source + sources.js,sources.rootJs])
 	.pipe(concat('main.js'))
 	.pipe(gulp.dest(config.dist+paths.assets+"js"))
 });

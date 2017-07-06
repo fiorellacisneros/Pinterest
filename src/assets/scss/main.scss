@@ -1,15 +1,56 @@
-@import "bootstrap";
-h1{
-	color: blue;
-	font-family: 'Arial';
+
+.icon{
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	opacity: 0.4;
+	width: 30px;
+	height: 40px;
 }
 
-h2{
-	color: red;
-	font-family: "sans-serif"
+.logo{
+	background-image: url("../img/pinterest-logo.png");
+	opacity: 1;
+	width: 35px;
+	height: 40px;
 }
-p{
-	color: green;
-	font-size: 2rem;
+.categoria{
+	background-image: url("../img/hamburger-icon.png");
+}
+.user{
+	background-image: url("../img/user.png");
+	opacity: 0.3;
+	width: 35px;
+	height: 40px;
+}
+.message{
+	background-image: url("../img/message.png");
+}
+.navbar-brand p{
+	font-size: 12px;
+	margin-top: -10px;
+}
+.navbar-default{
+	background: transparent;
+	height: 70px;
 }
 
+input.form-control{
+	outline: 0;
+	border: none;
+	box-shadow:none;
+}
+.navbar-form{
+	width: 70%;
+}
+.form-group{
+	width: 100%;
+}
+.navbar-header{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 35px;
+}

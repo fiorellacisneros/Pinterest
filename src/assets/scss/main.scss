@@ -6,6 +6,10 @@
 body{
 	padding-top: 70px;
 }
+h1{
+	color: blue;
+	font-family: 'Arial';
+}
 .icon{
 	display: inline-block;
 	background-repeat: no-repeat;
@@ -44,7 +48,7 @@ body{
 }
 
 .navbar-default{
-	background: transparent;
+	background: white;
 	height: 65px;
 }
 .navbar-header{	
@@ -68,6 +72,7 @@ body{
 .navbar-brand p{
 	font-size: 12px;
 	margin-top: -10px;
+	color: gray;
 }
 .navbar-form{
 	width: 65%;
@@ -107,6 +112,29 @@ body{
     width: 95%;
     margin-left: 2.5%;
 }
+p{
+	color: green;
+	font-size: 2rem
+}
+//Estilos para el board
+.container {
+	margin: auto;
+}
+.pin {
+	margin-left: 3%;
+	padding-left: 0;
+	padding-right: 0;
+	overflow: auto;	
+	&__itemImg {
+		width:100%;
+    	max-width:200px;
+	
+	};
 
-
-
+	&__itemBoardName{
+		position: absolute;
+		bottom: 2px;
+		left:32%;
+	}
+	
+}
